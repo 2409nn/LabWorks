@@ -16,5 +16,8 @@
   "main": "lab_2.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "open": "^10.2.0"
   }
 }
