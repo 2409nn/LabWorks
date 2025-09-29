@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>lab_29</title>
+</head>
+<body>
+
+<section id="task1">
+    <h2>Задание 1</h2>
+    <h1 id="t1-h1">Заголовок</h1>
+    <p id="t1-p">Абзац</p>
+    <ul id="t1-ul">
+        <li>элемент 1</li>
+        <li>элемент 2</li>
+    </ul>
+    <button onclick="first()">Run first()</button>
+</section>
+
+<section id="task2">
+    <h2>Задание 2</h2>
+    <ul id="t2-ul">
+        <li>пункт A</li>
+        <li>пункт B</li>
+        <li>пункт C</li>
+    </ul>
+    <button onclick="second()">Run second()</button>
+</section>
+
+<section id="task3">
+    <h2>Задание 3</h2>
+    <p id="t3-p1">Первый абзац</p>
+    <p id="t3-p2">Второй абзац</p>
+    <p id="t3-p3">Третий абзац</p>
+    <button onclick="third()">Run third()</button>
+</section>
+
+<section id="task4">
+    <h2>Задание 4</h2>
+    <div id="t4-div">
+        <p id="t4-p">Текст внутри div</p>
+    </div>
+    <button onclick="fourth()">Run fourth()</button>
+</section>
+
+<section id="task5">
+    <h2>Задание 5</h2>
+    <ul id="t5-ul">
+        <li>li 1</li>
+        <li>li 2</li>
+        <li>li 3</li>
+    </ul>
+    <button onclick="fifth()">Run fifth()</button>
+</section>
+
+<section id="task6">
+    <h2>Задание 6</h2>
+    <h1 id="t6-h1">Заголовок</h1>
+    <p id="t6-p">Простой абзац</p>
+    <button onclick="sixth()">Run sixth()</button>
+</section>
+
+<script>
+    const first = () => {
+        console.log(document.body.childNodes)
+        document.body.childNodes.forEach((n,i)=>console.log(i,n.nodeType,n.nodeName,n))
+    }
+
+    const second = () => {
+        const ul = document.querySelector('#t2-ul')
+        console.log(ul.firstElementChild, ul.lastElementChild)
+    }
+
+    const third = () => {
+        const p2 = document.getElementById('t3-p2')
+        console.log(p2.previousElementSibling, p2.nextElementSibling)
+    }
+
+    const fourth = () => {
+        const p = document.getElementById('t4-p')
+        console.log(p.parentNode, p.parentElement)
+    }
+
+    const fifth = () => {
+        Array.from(document.getElementById('t5-ul').children)
+            .forEach(li => li.style.border = '1px solid red')
+    }
+
+    const sixth = () => {
+        console.log('$0 в DevTools — выбранный элемент')
+        console.log('$0.parentElement — родитель')
+        console.log('$_ — результат последнего выражения')
+    }
+</script>
+</body>
+</html>
