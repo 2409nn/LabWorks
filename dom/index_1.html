@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="alert('Нажата кнопка 1')">Кнопка 1</button>
+
+<button id="btn">Кнопка 2</button>
+
+<button id="btn2">Кнопка 3</button>
+
+<div id="container">
+    Привет
+    <p>Абзац <span>текста</span></p>
+    <!-- комментарий -->
+</div>
+
+<script>
+    const btn = document.querySelector('#btn');
+    btn.addEventListener('click', () => {
+        console.log('Нажата кнопка 2');
+    })
+</script>
+<script src="lab_26.js"></script>
+</body>
+</html>

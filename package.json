@@ -1,0 +1,24 @@
+{
+  "name": "labwork",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/2409nn/LabWorks#readme",
+  "bugs": {
+    "url": "https://github.com/2409nn/LabWorks/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2409nn/LabWorks.git"
+  },
+  "license": "ISC",
+  "author": "Iskander Abdullayev",
+  "type": "module",
+  "main": "lab_2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.12.2"
+  }
+}
