@@ -17,7 +17,7 @@ def guessNumber():
     target = random.randint(1, 5)
     while guess := int(input("Введите число от 1 до 5: ")) != target:
         print("Ваше число меньше загаданного." if guess < target else "Ваше число больше загаданного.")
-    print("Поздравляем! Вы угадали число")
+    print("Поздравляем! Вы угадали число ")
 
 guessNumber()
 

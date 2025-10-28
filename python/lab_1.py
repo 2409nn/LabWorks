@@ -54,7 +54,7 @@ def getRealRoots(a:float, b:float, c:float):
         return {"x1": round(x1, 2)}
 
     else:
-        print("Корней нет")
+        print("Корней нет ")
         return {}
 
 print(getRealRoots(1.0, 4.0, 2.0))
